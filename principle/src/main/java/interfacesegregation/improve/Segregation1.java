@@ -1,4 +1,4 @@
-package InterfaceSegregation.improve;
+package interfacesegregation.improve;
 
 /**
  * <p>

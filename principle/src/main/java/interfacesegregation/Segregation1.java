@@ -1,4 +1,4 @@
-package InterfaceSegregation;
+package interfacesegregation;
 
 /**
  * <p>
