@@ -25,11 +25,21 @@ class Person{
     public void receive(Email email){
         System.out.println(email.getInfo());
     }
+
+    public void receive(Weixin weixin){
+        System.out.println(weixin.getInfo());
+    }
 }
 
 class Email{
     public String getInfo(){
         return "电子邮件信息：hello,world!";
+    }
+}
+
+class Weixin{
+    public String getInfo(){
+        return "微信信息：hello";
     }
 }
 
