@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>dependency.PersonServiceBean</OriginalElement>
+  <nodes>
+    <node x="124.99634468984672" y="138.97535971699622">dependency.PersonServiceBean</node>
+    <node x="12.272819362821934" y="23.029578035068795">dependency.Person</node>
+    <node x="320.936274084943" y="0.0">dependency.Department</node>
+    <node x="0.0" y="344.5460185193584">dependency.PersonDao</node>
+    <node x="335.31190607769395" y="328.6367453093533">dependency.IDCard</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="dependency.IDCard" target="dependency.PersonServiceBean" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dependency.Person" target="dependency.PersonServiceBean" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dependency.PersonDao" target="dependency.PersonServiceBean" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dependency.Department" target="dependency.PersonServiceBean" relationship="GENERALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="气球" zoom="1.0" showDependencies="false" x="227.5" y="199.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>内部类</Category>
+    <Category>字段</Category>
+    <Category>属性</Category>
+    <Category>方法</Category>
+    <Category>构造函数</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

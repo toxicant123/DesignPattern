@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>implementation.PersonServiceBean</OriginalElement>
+  <nodes>
+    <node x="7.5" y="0.0">implementation.PersonService</node>
+    <node x="0.0" y="104.0">implementation.PersonServiceBean</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="implementation.PersonServiceBean" target="implementation.PersonService" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="分层" zoom="1.0" showDependencies="false" x="89.0" y="91.0" />
+  <SelectedNodes>
+    <node>implementation.PersonServiceBean</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>内部类</Category>
+    <Category>字段</Category>
+    <Category>属性</Category>
+    <Category>方法</Category>
+    <Category>构造函数</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
