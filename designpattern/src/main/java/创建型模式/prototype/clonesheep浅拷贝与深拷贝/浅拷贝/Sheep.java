@@ -1,4 +1,4 @@
-package 创建型模式.prototype.clonesheep原型模式;
+package 创建型模式.prototype.clonesheep浅拷贝与深拷贝.浅拷贝;
 
 /**
  * @author toxicant123
@@ -11,6 +11,7 @@ public class Sheep implements Cloneable {
     private int age;
     private String color;
     private String address;
+    public Sheep friend;
 
     public Sheep() {
     }
