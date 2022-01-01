@@ -1,6 +1,6 @@
-package 创建型模式.factory.factorymethod.pizzastore工厂方法模式.order;
+package 创建型模式.factory.abstractfactory.pizzastore抽象工厂模式.order;
 
-import 创建型模式.factory.factorymethod.pizzastore工厂方法模式.pizza.Pizza;
+import 创建型模式.factory.abstractfactory.pizzastore抽象工厂模式.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,19 +10,25 @@ import java.io.InputStreamReader;
  * @author toxicant123
  * @version 1.0
  * @Description
- * @create 2022-01-01 12:28
+ * @create 2022-01-01 13:39
  */
-public abstract class OrderPizza {
+public class OrderPizza {
+    AbsFactory factory;
 
-    // 构造器
-    public OrderPizza() {
+    public OrderPizza(AbsFactory factory) {
+        setAbsFactory(factory);
+    }
+
+    private void setAbsFactory(AbsFactory factory) {
         Pizza pizza;
-        String orderType; // 订购披萨的类型
+        String orderType; //用户输入的
+        this.factory = factory;
+
         do {
             orderType = getType();
-            pizza = createPizza(orderType); //抽象方法，由工厂子类完成
+            pizza = factory.createPizza(orderType);
+
             if (pizza != null) {
-                //输出pizza 制作过程
                 pizza.prepare();
                 pizza.bake();
                 pizza.cut();
@@ -31,12 +37,8 @@ public abstract class OrderPizza {
                 System.out.println("订购失败");
                 break;
             }
-
         } while (true);
     }
-
-    //定义一个抽象方法，createPizza , 让各个工厂子类自己实现
-    abstract Pizza createPizza(String orderType);
 
     // 写一个方法，可以获取客户希望订购的披萨种类
     private String getType() {
