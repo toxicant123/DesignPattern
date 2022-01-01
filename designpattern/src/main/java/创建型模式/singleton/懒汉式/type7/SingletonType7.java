@@ -2,9 +2,10 @@ package 创建型模式.singleton.懒汉式.type7;
 
 /**
  * <p>
- *     懒汉式（静态内部类）<br>
- *     静态内部类在装载时是线程安全的
+ * 懒汉式（静态内部类）<br>
+ * 静态内部类在装载时是线程安全的
  * </p>
+ *
  * @author toxicant123
  * @version 1.0
  * @Description
@@ -21,17 +22,20 @@ public class SingletonType7 {
     }
 }
 
-class Singleton{
+class Singleton {
     private static volatile Singleton instance;
 
-    private Singleton(){};
+    private Singleton() {
+    }
+
+    ;
 
     //写一个静态内部类，该类中有一个静态属性Singleton
-    private static class SingletonInstance{
+    private static class SingletonInstance {
         private static final Singleton INSTANCE = new Singleton();
     }
 
-    public static Singleton getInstance(){
+    public static Singleton getInstance() {
         return SingletonInstance.INSTANCE;
     }
 }

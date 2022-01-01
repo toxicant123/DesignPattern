@@ -59,7 +59,7 @@ class CollegeManager {
 
     //输出学院员工的信息
     //获取到学院员工
-    public void printEmployee(){
+    public void printEmployee() {
         List<CollegeEmployee> list1 = getAllEmployee();
         System.out.println("------------学院员工------------");
         for (CollegeEmployee e : list1) {

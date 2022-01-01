@@ -17,7 +17,7 @@ public class OrderPizza {
     SimpleFactory simpleFactory;
     Pizza pizza = null;
 
-    public OrderPizza(SimpleFactory simpleFactory){
+    public OrderPizza(SimpleFactory simpleFactory) {
         setSimpleFactory(simpleFactory);
     }
 
@@ -30,7 +30,7 @@ public class OrderPizza {
             pizza = this.simpleFactory.createPizza(orderType);
 
             //输出pizza
-            if (pizza != null){
+            if (pizza != null) {
                 pizza.prepare();
                 pizza.bake();
                 pizza.cut();

@@ -2,8 +2,9 @@ package 创建型模式.singleton.懒汉式.type6;
 
 /**
  * <p>
- *     懒汉式（双重检查）
+ * 懒汉式（双重检查）
  * </p>
+ *
  * @author toxicant123
  * @version 1.0
  * @Description
@@ -20,17 +21,20 @@ public class SingletonType6 {
     }
 }
 
-class Singleton{
+class Singleton {
     private static volatile Singleton instance;
 
-    private Singleton(){};
+    private Singleton() {
+    }
+
+    ;
 
     //提供一个静态的公有方法，加入同步处理的代码，解决线程安全的问题
     //即懒汉式
-    public static Singleton getInstance(){
-        if (instance == null){
-            synchronized (Singleton.class){
-                if (instance == null){
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
                     instance = new Singleton();
                 }
             }

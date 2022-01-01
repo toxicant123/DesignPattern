@@ -2,8 +2,9 @@ package openclosed.improve;
 
 /**
  * <p>
- *     如果要新增加一个类，需要改动的地方太多，耦合性比较高
+ * 如果要新增加一个类，需要改动的地方太多，耦合性比较高
  * </p>
+ *
  * @author toxicant123
  * @version 1.0
  * @Description
@@ -21,7 +22,7 @@ public class OpenClosed1 {
 
 class GraphicEditor {
     public void drawShape(Shape s) {
-       s.draw();
+        s.draw();
     }
 
 }
@@ -55,8 +56,8 @@ class Circle extends Shape {
 }
 
 //新增画三角形
-class Triangle extends Shape{
-    Triangle(){
+class Triangle extends Shape {
+    Triangle() {
         m_type = 3;
     }
 
@@ -67,8 +68,8 @@ class Triangle extends Shape{
 }
 
 //新增一个图形
-class OtherGraphic extends Shape{
-    public OtherGraphic(){
+class OtherGraphic extends Shape {
+    public OtherGraphic() {
         m_type = 4;
     }
 

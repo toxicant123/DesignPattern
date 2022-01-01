@@ -6,8 +6,8 @@ package 创建型模式.factory.simplefactory.pizzastore传统方式.pizza;
  * @Description
  * @create 2022-01-01 9:32
  */
-public class CheesePizza extends Pizza{
-    public CheesePizza(){
+public class CheesePizza extends Pizza {
+    public CheesePizza() {
         setName("cheese pizza");
     }
 

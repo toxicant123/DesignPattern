@@ -2,9 +2,10 @@ package singleresponsibility;
 
 /**
  * <p>
- *     方式三:<br>
- *     这种修改方法并没有对原来的类做大修改，只是增加了方法
+ * 方式三:<br>
+ * 这种修改方法并没有对原来的类做大修改，只是增加了方法
  * </p>
+ *
  * @author toxicant123
  * @version 1.0
  * @Description
@@ -20,14 +21,16 @@ public class SingleResponsibillity3 {
     }
 }
 
-class Vehicle2{
-    public void run(String vehicle){
+class Vehicle2 {
+    public void run(String vehicle) {
         System.out.println(vehicle + " 在公路上运行...");
     }
-    public void runAir(String vehicle){
+
+    public void runAir(String vehicle) {
         System.out.println(vehicle + " 在天空上运行...");
     }
-    public void runWater(String vehicle){
+
+    public void runWater(String vehicle) {
         System.out.println(vehicle + " 在水中运行...");
     }
 }

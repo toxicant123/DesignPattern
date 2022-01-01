@@ -2,8 +2,9 @@ package interfacesegregation;
 
 /**
  * <p>
- *     虽然A类不需要B类的4，5方法，但是B类仍然会实现，这违反了接口隔离原则
+ * 虽然A类不需要B类的4，5方法，但是B类仍然会实现，这违反了接口隔离原则
  * </p>
+ *
  * @author toxicant123
  * @version 1.0
  * @Description
@@ -12,15 +13,19 @@ package interfacesegregation;
 public class Segregation1 {
 }
 
-interface Interface1{
+interface Interface1 {
     void operation1();
+
     void operation2();
+
     void operation3();
+
     void operation4();
+
     void operation5();
 }
 
-class B implements Interface1{
+class B implements Interface1 {
     @Override
     public void operation1() {
         System.out.println("B 实现了 operation1");
@@ -47,7 +52,7 @@ class B implements Interface1{
     }
 }
 
-class D implements Interface1{
+class D implements Interface1 {
     @Override
     public void operation1() {
         System.out.println("D 实现了 operation1");
@@ -76,26 +81,30 @@ class D implements Interface1{
 
 //A类通过接口Interface1依赖（使用）B类，但是只会用到1，2，3方法
 class A {
-    public void depend1(Interface1 i){
+    public void depend1(Interface1 i) {
         i.operation1();
     }
-    public void depend2(Interface1 i){
+
+    public void depend2(Interface1 i) {
         i.operation2();
     }
-    public void depend3(Interface1 i){
+
+    public void depend3(Interface1 i) {
         i.operation3();
     }
 }
 
 //C类通过接口Interface1依赖（使用）D类，但是只会用到1，2，3方法
 class C {
-    public void depend1(Interface1 i){
+    public void depend1(Interface1 i) {
         i.operation1();
     }
-    public void depend4(Interface1 i){
+
+    public void depend4(Interface1 i) {
         i.operation4();
     }
-    public void depend5(Interface1 i){
+
+    public void depend5(Interface1 i) {
         i.operation5();
     }
 }

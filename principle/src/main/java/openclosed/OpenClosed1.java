@@ -2,8 +2,9 @@ package openclosed;
 
 /**
  * <p>
- *     如果要新增加一个类，需要改动的地方太多，耦合性比较高
+ * 如果要新增加一个类，需要改动的地方太多，耦合性比较高
  * </p>
+ *
  * @author toxicant123
  * @version 1.0
  * @Description
@@ -37,7 +38,7 @@ class GraphicEditor {
         System.out.println("绘制圆形");
     }
 
-    public void drawTriangle(Shape r){
+    public void drawTriangle(Shape r) {
         System.out.println("绘制三角形");
     }
 }
@@ -59,8 +60,8 @@ class Circle extends Shape {
 }
 
 //新增画三角形
-class Triangle extends Shape{
-    Triangle(){
+class Triangle extends Shape {
+    Triangle() {
         m_type = 3;
     }
 }

@@ -6,7 +6,7 @@ package implementation;
  * @Description
  * @create 2021-12-28 19:52
  */
-public class PersonServiceBean implements PersonService{
+public class PersonServiceBean implements PersonService {
     @Override
     public void delete(Integer id) {
 

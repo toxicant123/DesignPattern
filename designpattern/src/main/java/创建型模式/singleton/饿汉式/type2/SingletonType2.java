@@ -2,8 +2,9 @@ package 创建型模式.singleton.饿汉式.type2;
 
 /**
  * <p>
- *     饿汉式静态代码块
+ * 饿汉式静态代码块
  * </p>
+ *
  * @author toxicant123
  * @version 1.0
  * @Description
@@ -20,12 +21,12 @@ public class SingletonType2 {
     }
 }
 
-class Singleton{
+class Singleton {
     //1.本类内部创建对象实例
     private static Singleton instance;
 
     //2.构造器私有化，外部不能new
-    private Singleton(){
+    private Singleton() {
     }
 
     static {
@@ -33,7 +34,7 @@ class Singleton{
     }
 
     //3.提供一个公有的静态方法，返回实例对象
-    public static Singleton getInstance(){
+    public static Singleton getInstance() {
         return instance;
     }
 }

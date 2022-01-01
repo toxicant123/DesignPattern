@@ -2,8 +2,9 @@ package 创建型模式.singleton.懒汉式.type8;
 
 /**
  * <p>
- *     懒汉式（枚举）
+ * 懒汉式（枚举）
  * </p>
+ *
  * @author toxicant123
  * @version 1.0
  * @Description
@@ -20,10 +21,10 @@ public class SingletonType8 {
     }
 }
 
-enum Singleton{
+enum Singleton {
     INSTANCE;
 
-    public void sayOK(){
+    public void sayOK() {
         System.out.println("ok");
     }
 }
