@@ -10,7 +10,7 @@ public class Client {
     public static void main(String[] args) throws Exception {
         DeepProtoType deepProtoType1 = new DeepProtoType();
         deepProtoType1.name = "宋江";
-        deepProtoType1.deepCloneableTarget = new DeepCloneableTarget("大牛","大牛类");
+        deepProtoType1.deepCloneableTarget = new DeepCloneableTarget("大牛", "大牛类");
 
         //方式1 完成深拷贝
 //        DeepProtoType deepProtoType2 = (DeepProtoType) deepProtoType1.clone();
