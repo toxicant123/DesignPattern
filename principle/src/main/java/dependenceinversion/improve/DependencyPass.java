@@ -3,7 +3,6 @@ package dependenceinversion.improve;
 public class DependencyPass {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         ChangHong changHong = new ChangHong();
 //		OpenAndClose openAndClose = new OpenAndClose();
 //		openAndClose.open(changHong);
@@ -34,7 +33,6 @@ public class DependencyPass {
 //
 //	@Override
 //	public void play() {
-//		// TODO Auto-generated method stub
 //		System.out.println("长虹电视机，打开");
 //	}
 //
@@ -93,7 +91,6 @@ class ChangHong implements ITV {
 
     @Override
     public void play() {
-        // TODO Auto-generated method stub
         System.out.println("长虹电视机，打开");
     }
 

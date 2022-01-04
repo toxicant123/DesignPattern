@@ -41,6 +41,6 @@ start to learn Java design pattern in 2021/12/26
 2) 结构型模式：[适配器模式](designpattern/src/main/java/结构型模式/adapter/适配器模式.md)
    、[桥接模式](designpattern/src/main/java/结构型模式/bridge/桥接模式.md)
    、[装饰者模式](designpattern/src/main/java/结构型模式/decorator/装饰者模式.md)
-   、[组合模式](designpattern/src/main/java/结构型模式/composite/组合模式.md)、外观模式、享元模式、代理模式。
+   、[组合模式](designpattern/src/main/java/结构型模式/composite/组合模式.md)、[外观模式](designpattern/src/main/java/结构型模式/facade/外观模式.md)、享元模式、代理模式。
 3) 行为型模式：模版方法模式、命令模式、访问者模式、迭代器模式、观察者模式、中介者模式、备忘录模式、解释器模式（Interpreter 模式）、状态模式、策略模式、职责链模式(责任链模式)。\
    注意：不同的书籍上对分类和名称略有差别
