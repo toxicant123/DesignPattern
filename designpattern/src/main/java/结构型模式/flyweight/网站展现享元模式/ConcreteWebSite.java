@@ -6,7 +6,7 @@ package 结构型模式.flyweight.网站展现享元模式;
  * @Description
  * @create 2022-01-05 9:48
  */
-public class ConcreteWebSite extends WebSite{
+public class ConcreteWebSite extends WebSite {
     //网站发布的类型
     private String type = "";
 
