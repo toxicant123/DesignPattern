@@ -26,7 +26,7 @@ public class InfoCollegeIterator implements Iterator {
 
     @Override
     public boolean hasNext() {
-        if (index >= departmentList.size() - 1){
+        if (index >= departmentList.size() - 1) {
             return false;
         } else {
             index += 1;

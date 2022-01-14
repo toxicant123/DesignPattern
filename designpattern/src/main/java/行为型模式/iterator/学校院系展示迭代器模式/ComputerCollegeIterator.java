@@ -25,11 +25,12 @@ public class ComputerCollegeIterator implements Iterator {
 
     /**
      * 判断是否还有下一个元素
+     *
      * @return
      */
     @Override
     public boolean hasNext() {
-        if (position >= departments.length || departments[position] == null){
+        if (position >= departments.length || departments[position] == null) {
             return false;
         } else {
             return true;
@@ -47,5 +48,6 @@ public class ComputerCollegeIterator implements Iterator {
      * 删除的方法，默认空实现
      */
     @Override
-    public void remove() {}
+    public void remove() {
+    }
 }

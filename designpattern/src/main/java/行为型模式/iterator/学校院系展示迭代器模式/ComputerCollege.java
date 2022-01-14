@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @Description
  * @create 2022-01-08 10:01
  */
-public class ComputerCollege implements College{
+public class ComputerCollege implements College {
 
     private Department[] departments;
 
@@ -19,9 +19,9 @@ public class ComputerCollege implements College{
 
     public ComputerCollege() {
         departments = new Department[5];
-        addDepartment("java专业","java专业");
-        addDepartment("PHP专业","PHP专业");
-        addDepartment("大数据专业","大数据专业");
+        addDepartment("java专业", "java专业");
+        addDepartment("PHP专业", "PHP专业");
+        addDepartment("大数据专业", "大数据专业");
     }
 
     @Override

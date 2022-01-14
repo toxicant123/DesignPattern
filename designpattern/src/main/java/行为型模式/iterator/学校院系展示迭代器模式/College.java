@@ -13,6 +13,7 @@ public interface College {
 
     /**
      * 增加系的方法
+     *
      * @param name
      * @param desc
      */
@@ -20,6 +21,7 @@ public interface College {
 
     /**
      * 返回一个迭代器，遍历
+     *
      * @return
      */
     Iterator createIterator();

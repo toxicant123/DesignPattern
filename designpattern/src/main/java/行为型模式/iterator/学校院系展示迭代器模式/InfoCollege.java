@@ -10,14 +10,14 @@ import java.util.List;
  * @Description
  * @create 2022-01-08 10:06
  */
-public class InfoCollege implements College{
+public class InfoCollege implements College {
     private List<Department> departmentList;
 
     public InfoCollege() {
         departmentList = new ArrayList<>();
-        addDepartment("信息安全专业","信息安全专业");
-        addDepartment("网络安全专业","网络安全专业");
-        addDepartment("服务器安全专业","服务器安全专业");
+        addDepartment("信息安全专业", "信息安全专业");
+        addDepartment("网络安全专业", "网络安全专业");
+        addDepartment("服务器安全专业", "服务器安全专业");
     }
 
     @Override
