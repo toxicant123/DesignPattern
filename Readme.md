@@ -50,5 +50,7 @@ start to learn Java design pattern in 2021/12/26
    、[观察者模式](designpattern/src/main/java/行为型模式/observer/观察者模式.md)
    、[中介者模式](designpattern/src/main/java/行为型模式/mediator/中介者模式.md)
    、[备忘录模式](designpattern/src/main/java/行为型模式/memento/备忘录模式.md)
-   、[解释器模式（Interpreter 模式）](designpattern/src/main/java/行为型模式/interpreter/解释器模式.md)、[状态模式](designpattern/src/main/java/行为型模式/state/状态模式.md)、[策略模式](designpattern/src/main/java/行为型模式/strategy/策略模式.md)、职责链模式(责任链模式)。\
+   、[解释器模式（Interpreter 模式）](designpattern/src/main/java/行为型模式/interpreter/解释器模式.md)
+   、[状态模式](designpattern/src/main/java/行为型模式/state/状态模式.md)、[策略模式](designpattern/src/main/java/行为型模式/strategy/策略模式.md)
+   、[职责链模式(责任链模式)](designpattern/src/main/java/行为型模式/chainofresponsibility/职责链模式.md)。\
    注意：不同的书籍上对分类和名称略有差别
