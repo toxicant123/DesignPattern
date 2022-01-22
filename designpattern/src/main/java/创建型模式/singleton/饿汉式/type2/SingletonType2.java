@@ -25,12 +25,12 @@ class Singleton {
     //1.本类内部创建对象实例
     private static Singleton instance;
 
-    //2.构造器私有化，外部不能new
-    private Singleton() {
-    }
-
     static {
         instance = new Singleton();
+    }
+
+    //2.构造器私有化，外部不能new
+    private Singleton() {
     }
 
     //3.提供一个公有的静态方法，返回实例对象

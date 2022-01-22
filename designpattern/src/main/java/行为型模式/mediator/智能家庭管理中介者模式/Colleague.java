@@ -11,8 +11,8 @@ package 行为型模式.mediator.智能家庭管理中介者模式;
  * @create 2022-01-14 12:01
  */
 public abstract class Colleague {
-    private Mediator mediator;
     public String name;
+    private Mediator mediator;
 
     public Colleague(Mediator mediator, String name) {
 

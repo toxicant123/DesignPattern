@@ -7,11 +7,11 @@ package 创建型模式.prototype.clonesheep浅拷贝与深拷贝.浅拷贝;
  * @create 2022-01-01 19:32
  */
 public class Sheep implements Cloneable {
+    public Sheep friend;
     private String name;
     private int age;
     private String color;
     private String address;
-    public Sheep friend;
 
     public Sheep() {
     }

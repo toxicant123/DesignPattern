@@ -3,8 +3,13 @@ package demeter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <p>
+ * 有一个学校，下属有各个学院和总部，现要求打印出学校总部员工ID和学院员工的id
+ * </p>
+ */
 //客户端
-public class Demeter1 {
+public class Demeter {
     public static void main(String[] args) {
         //创建了一个 SchoolManager 对象
         SchoolManager schoolManager = new SchoolManager();
@@ -20,12 +25,12 @@ public class Demeter1 {
 class Employee {
     private String id;
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
 
@@ -34,12 +39,12 @@ class Employee {
 class CollegeEmployee {
     private String id;
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
 

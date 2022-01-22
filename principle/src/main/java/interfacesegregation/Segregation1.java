@@ -1,5 +1,17 @@
 package interfacesegregation;
 
+interface Interface1 {
+    void operation1();
+
+    void operation2();
+
+    void operation3();
+
+    void operation4();
+
+    void operation5();
+}
+
 /**
  * <p>
  * 虽然A类不需要B类的4，5方法，但是B类仍然会实现，这违反了接口隔离原则
@@ -11,18 +23,6 @@ package interfacesegregation;
  * @create 2021-12-26 17:42
  */
 public class Segregation1 {
-}
-
-interface Interface1 {
-    void operation1();
-
-    void operation2();
-
-    void operation3();
-
-    void operation4();
-
-    void operation5();
 }
 
 class B implements Interface1 {

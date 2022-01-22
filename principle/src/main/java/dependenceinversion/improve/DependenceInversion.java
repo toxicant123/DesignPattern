@@ -1,5 +1,10 @@
 package dependenceinversion.improve;
 
+//定义一个接口
+interface IReceiver {
+    String getInfo();
+}
+
 /**
  * <p>
  * 方式二<br>
@@ -18,11 +23,6 @@ public class DependenceInversion {
     }
 }
 
-//定义一个接口
-interface IReceiver {
-    String getInfo();
-}
-
 //完成Person接收消息的功能
 class Person {
     public void receive(IReceiver receiver) {
@@ -33,7 +33,7 @@ class Person {
 class Email implements IReceiver {
     @Override
     public String getInfo() {
-        return "电子邮件信息：hello,world!";
+        return "电子邮件信息：hello, world!";
     }
 }
 

@@ -30,12 +30,12 @@ class Singleton {
 
     ;
 
+    public static Singleton getInstance() {
+        return SingletonInstance.INSTANCE;
+    }
+
     //写一个静态内部类，该类中有一个静态属性Singleton
     private static class SingletonInstance {
         private static final Singleton INSTANCE = new Singleton();
-    }
-
-    public static Singleton getInstance() {
-        return SingletonInstance.INSTANCE;
     }
 }

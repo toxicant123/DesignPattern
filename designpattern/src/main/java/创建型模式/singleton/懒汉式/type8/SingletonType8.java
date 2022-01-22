@@ -1,5 +1,13 @@
 package 创建型模式.singleton.懒汉式.type8;
 
+enum Singleton {
+    INSTANCE;
+
+    public void sayOK() {
+        System.out.println("ok");
+    }
+}
+
 /**
  * <p>
  * 懒汉式（枚举）
@@ -18,13 +26,5 @@ public class SingletonType8 {
         System.out.println(instance1.hashCode());
         System.out.println(instance2.hashCode());
         instance1.sayOK();
-    }
-}
-
-enum Singleton {
-    INSTANCE;
-
-    public void sayOK() {
-        System.out.println("ok");
     }
 }

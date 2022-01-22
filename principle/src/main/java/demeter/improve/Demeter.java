@@ -3,8 +3,13 @@ package demeter.improve;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <p>
+ * 前面设计的问题在于SchoolManager中，CollegeEmployee类并不是SchoolManager类的直接朋友，按照迪米特法则，应该避免类中出现这样非直接朋友关系的耦合
+ * </p>
+ */
 //客户端
-public class Demeter1 {
+public class Demeter {
     public static void main(String[] args) {
         //创建了一个 SchoolManager 对象
         SchoolManager schoolManager = new SchoolManager();
@@ -20,12 +25,12 @@ public class Demeter1 {
 class Employee {
     private String id;
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
 
@@ -34,12 +39,12 @@ class Employee {
 class CollegeEmployee {
     private String id;
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
 

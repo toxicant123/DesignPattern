@@ -1,28 +1,16 @@
 package dependenceinversion.improve;
 
-public class DependencyPass {
+// 方式3，通过setter方法传递
+interface IOpenAndClose {
+    public void open(); // 抽象方法
 
-    public static void main(String[] args) {
-        ChangHong changHong = new ChangHong();
-//		OpenAndClose openAndClose = new OpenAndClose();
-//		openAndClose.open(changHong);
-
-        //通过构造器进行依赖传递
-//		OpenAndClose openAndClose = new OpenAndClose(changHong);
-//		openAndClose.open();
-        //通过setter方法进行依赖传递
-        OpenAndClose openAndClose = new OpenAndClose();
-        openAndClose.setTv(changHong);
-        openAndClose.open();
-
-    }
-
+    public void setTv(ITV tv);
 }
 
 // 方式1： 通过接口传递实现依赖
 // 开关的接口
 // interface IOpenAndClose {
-// public void open(ITV tv); //抽象方法,接收接口
+// public void open(ITV tv); //抽象方法，接收接口
 // }
 //
 // interface ITV { //ITV接口
@@ -62,15 +50,27 @@ public class DependencyPass {
 // }
 
 
-// 方式3 , 通过setter方法传递
-interface IOpenAndClose {
-    public void open(); // 抽象方法
-
-    public void setTv(ITV tv);
-}
-
 interface ITV { // ITV接口
     public void play();
+}
+
+public class DependencyPass {
+
+    public static void main(String[] args) {
+        ChangHong changHong = new ChangHong();
+//		OpenAndClose openAndClose = new OpenAndClose();
+//		openAndClose.open(changHong);
+
+        //通过构造器进行依赖传递
+//		OpenAndClose openAndClose = new OpenAndClose(changHong);
+//		openAndClose.open();
+        //通过setter方法进行依赖传递
+        OpenAndClose openAndClose = new OpenAndClose();
+        openAndClose.setTv(changHong);
+        openAndClose.open();
+
+    }
+
 }
 
 class OpenAndClose implements IOpenAndClose {
